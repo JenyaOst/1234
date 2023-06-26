@@ -325,9 +325,9 @@ address {
 }
 .values-list {
   display: flex;
+  gap: 72px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 72px;
 }
 .values-paragraph-list {
   width: 100%;
@@ -367,7 +367,7 @@ address {
   text-align: center;
   width: 100%;
 }
-.team-list {
+.our-team {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
@@ -568,7 +568,7 @@ text-transform: uppercase;
   width: 264px;
   letter-spacing: 0.02em;
 }
-footer .studio {
+.footer-logo-span {
   color: #f4f4fd;
 }
 .social-div {
@@ -992,7 +992,7 @@ button {
   }
 
   .container {
-    max-width: 768px;
+    max-width: 738px;
   }
   .header-navigation,
   .header-contacts,
@@ -1012,6 +1012,19 @@ button {
   .nav:hover {
     color: #404bbf;
   }
+  .header-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-title-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .header-link.current-page::after {
     content: "";
     position: absolute;
@@ -1027,10 +1040,6 @@ button {
     color: #404bbf;
   }
 
-  .aktive {
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   .solutions-section .container {
     width: 526px;
   }
@@ -1048,12 +1057,11 @@ button {
     margin-top: 36px;
   }
   
- 
   .values-list{
     justify-content: space-between;
     gap: 72px 0;
   }
-  .values-paragraph-lists {
+  .values-paragraph-list{
     width: calc((100% - 24px) / 2);
   
   }
@@ -1063,13 +1071,13 @@ button {
   .team-container {
     max-width: 582px;
   }
-  .team-list {
+  .our-team {
     flex-wrap: wrap;
     gap: 64px 24px;
     justify-content: space-between;
   }
   .team-background-photo {
-    width: 264px;
+    width: calc((100% - 24px) / 2);
   }
  
   .customer-container {
@@ -1209,6 +1217,10 @@ letter-spacing: 0.48px;
     width: calc((100% - 72px) / 4);
     padding-right: 0;
     margin-bottom: 0;
+  }
+  .about-title{
+    text-align: center;
+    margin-bottom: 72px;
   }
   .icon-container {
     display: flex;
